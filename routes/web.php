@@ -5,7 +5,7 @@ use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| Web Routes    
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -14,3 +14,4 @@ use App\Http\Controllers\PostController;
 |
 */
 Route::get('/', [PostController::class, 'index']);
+Route::get('/posts/{post}', [PostController::class ,'show']);
